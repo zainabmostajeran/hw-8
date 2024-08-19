@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="parent">
+        <div class="col-12 col-md-12 col-lg-9 col-xl-8 f-12 f-30">
+          <!-- right -->
+          <div class="right" id="catch">
+            <div class="header font"><h1>رستوران مک دونالد شعبه تهران</h1></div>
+            <div class="row" id="plus"></div>
+          </div>
+        </div>
+        <!-- left -->
+        <div class="col-12 col-md-12 col-lg-3 col-xl-4 mx f-10 f-30">
+          <div class="left">
+            <div class="parag">
+              <p>جمع کل سفارشات:</p>
+              <p id="Total-orders">0 تومان</p>
+            </div>
+            <div class="parag">
+              <p>حق سرویس وکارمزد:</p>
+              <p id="service">0 تومان</p>
+            </div>
+            <div class="parag">
+              <p>تخفیف :</p>
+              <p id="code-discount">0 تومان</p>
+            </div>
+            <div class="parag">
+              <input class="input" type="text" placeholder="کد تخفیف" />
+              <button class="tick" id="discount">
+                <i class="fa fa-check" aria-hidden="true"></i>
+              </button>
+            </div>
+            <div class="parag yellow">
+              <p>مبلغ قابل پرداخت:</p>
+              <p id="amount-payable">0 تومان</p>
+            </div>
+            <button class="sabt" id="registration">ثبت سفارش</button>
+          </div>
+        </div>
+      </div>
+      <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p>سفارش شما با موفقیت ثبت شد.</p>
+          <button class="modalbtn">باشه</button>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
